@@ -36,6 +36,18 @@ You can also poke it from your phone (`/status`, `/screenshot`, `/leave`).
 
 ---
 
+## Download
+
+**Easiest:** grab the latest **`afkguardian-<version>.jar`** from the
+[Releases page](https://github.com/fedor5556/AFK_Minecraft_mod/releases) and drop it into your
+`.minecraft/mods` folder. You need **NeoForge 21.1.x** for **Minecraft 1.21.1** first — see [Install](#install).
+
+> Planned: a [Modrinth](https://modrinth.com/) page so you can install it straight from your launcher.
+
+If you'd rather build it yourself, read on.
+
+---
+
 ## Build
 
 You need a **JDK 21** (e.g. [Temurin 21](https://adoptium.net/temurin/releases/?version=21)).
