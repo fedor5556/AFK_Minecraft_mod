@@ -1,0 +1,36 @@
+# AFK Guardian - neoforge.mods.toml
+# Placeholder values in this file are filled in from gradle.properties at build time.
+
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+# Client-only mod: never demand that the server also has it, so you can join any server.
+displayTest="IGNORE_ALL_VERSION"
+authors="Fedor"
+description='''
+Watches your character while you are AFK and alerts you on Telegram. When you stop giving
+keyboard/mouse input for a configurable time, monitoring starts: it tracks your health and
+hunger and can automatically disconnect you and send a screenshot to your Telegram chat the
+moment you start taking damage. Supports remote commands from your phone (/status, /screenshot,
+/leave, /id). Client-side only.
+'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    # Any 1.21.1 NeoForge build (21.1.x). Only base 1.21.1 APIs are used.
+    versionRange="[21.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
